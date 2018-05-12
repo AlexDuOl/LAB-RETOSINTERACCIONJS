@@ -107,4 +107,48 @@ span i .fa-star .fa-briefcase {
   position: absolute;
 }
 
-/* MAIN*/
+/* FORM LISTA*/
+
+form.addlist span{
+  border-style: none;
+  border-radius: 8px;
+  background-color: #005485;
+  font-family: 'PT Sans', sans-serif;
+  height: 2.5em;
+  left: 5vh;
+  padding: 4px;
+  position: absolute;
+  text-align: left;
+  top: 10vh;
+  width: 20em;
+}
+
+span.task span.list {
+  padding-top: 1em;
+  padding-left: 1em;
+  font-weight: normal;
+}
+
+div.save {
+  box-sizing: content-box;
+  background-color: solid gray;
+  display: inline-block;
+  height: 10vh;
+  width: 10vh;
+}
+
+.savebutton {
+  background-color: #519839;
+  color: white;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  height: 3.5em;
+  width: 7.5em;
+}
+
+a.cancel {
+  background-color: #e2e4e6;
+  color: #4d4d4d;
+  padding: 1em;
+}
