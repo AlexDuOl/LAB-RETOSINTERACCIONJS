@@ -1,0 +1,110 @@
+/* Body */
+body{
+  background-color: #0079bf;
+  box-sizing: border-box;
+  margin: 0;
+}
+/* HEADER */
+header {
+ background-color: #026aa7;
+ border: #003c5e;
+ box-sizing: border-box;
+ height: 8vh;
+ margin: 0;
+ position: absolute;
+ width: 100%;
+}
+
+.leftbutton button {
+ background-color: #4d95be;
+ border-style: none;
+ border-radius: 8px;
+ color: white;
+ font-family: 'PT Sans', sans-serif;
+ font-weight: bold;
+ height: 2.6em;
+ left: 1%;
+ position: absolute;
+ text-align: center;
+ top: 15%;
+ width: 9em;
+}
+
+.barra input {
+ background-color: #4d95be;
+ border-style: none;
+ border-radius: 8px;
+ font-family: 'PT Sans', sans-serif;
+ height: 2.5em;
+ left: 10%;
+ position: absolute;
+ top: 15%;
+ width: 30em;
+}
+
+ .trello img {
+  height: 2em;
+  left: 45%;
+  position: absolute;
+  top: 15%;
+  width: 6.5em;
+}
+
+div button {
+ background-color: #4d95be;
+ border-style: none;
+ border-radius: 8px;
+ color: white;
+ font-weight: bold;
+ height: 2.5em;
+ position: absolute;
+ text-align: center;
+ top: 15%;
+ width: 2.5em;
+}
+
+.bell {
+ left: 93%;
+}
+
+.info {
+ left: 90%;
+}
+
+.plus {
+ left: 87%;
+}
+
+.user {
+ left: 96%;
+}
+
+/* MAIN*/
+article {
+  background-color: #0079bf;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  left: 3%;
+  margin: 0;
+  top: 11vh;
+  padding: 1px;
+  position: absolute;
+  width: 100%;
+}
+
+span {
+  box-sizing: content-box;
+  font-weight: bold;
+  padding: 4px;
+  position: relative;
+}
+
+span i .fa-star .fa-briefcase {
+  color: white;
+  padding: 4px;
+  position: absolute;
+}
+
+/* MAIN*/
