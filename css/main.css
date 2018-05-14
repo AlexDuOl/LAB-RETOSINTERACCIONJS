@@ -116,8 +116,7 @@ span i .fa-star .fa-briefcase {
   position: relative;
 }
 /* FORM LISTA*/
-section div.col  {
-  background-color: gray;
+section div.container  {
   height: 75vh;
   left: 3%;
   position: absolute;
@@ -125,7 +124,7 @@ section div.col  {
   width: 53vh;
 }
 
-section div.col input {
+section div.container input {
   border-style: none;
   border-radius: 8px;
   background-color: #005485;
@@ -137,10 +136,6 @@ section div.col input {
   position: absolute;
   text-align: left;
   width: 20em;
-}
-
-#addlist {
-  display: inline-block;
 }
 
 #addtext {
@@ -180,6 +175,19 @@ a.cancel {
   padding: 1em;
 }
 
-form.list {
-  display: none;
+/*---JAVASCRIPT---*/
+
+.square {
+  border-radius: 10px;
+  background-color: #e2e4e6;
+  height: 20em;
+  left: 5vh;
+  padding-left: 10px;
+  position: absolute;
+  top: 17vh;
+  width: 20em;
+}
+
+.botonCancel {
+  background-color: red;
 }
