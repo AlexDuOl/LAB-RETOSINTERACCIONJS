@@ -1,8 +1,8 @@
 /* Body */
 body{
   background-color: #0079bf;
-  box-sizing: border-box;
   margin: 0;
+  width: 100%;
 }
 /* HEADER */
 header {
@@ -10,6 +10,8 @@ header {
  border: #003c5e;
  box-sizing: border-box;
  height: 8vh;
+ left: 0;
+ right: 0;
  margin: 0;
  position: absolute;
  width: 100%;
@@ -107,26 +109,49 @@ span i .fa-star .fa-briefcase {
   position: absolute;
 }
 
+.menu a {
+  color: white;
+  left: 60%;
+  padding: 2px;
+  position: relative;
+}
 /* FORM LISTA*/
+section div.col  {
+  background-color: gray;
+  height: 75vh;
+  left: 3%;
+  position: absolute;
+  top: 17vh;
+  width: 53vh;
+}
 
-form.addlist span{
+section div.col input {
   border-style: none;
   border-radius: 8px;
   background-color: #005485;
   font-family: 'PT Sans', sans-serif;
-  height: 2.5em;
+  font-weight: bold;
+  height: 3em;
   left: 5vh;
-  padding: 4px;
+  padding-left: 10px;
   position: absolute;
   text-align: left;
-  top: 10vh;
   width: 20em;
 }
 
-span.task span.list {
-  padding-top: 1em;
-  padding-left: 1em;
-  font-weight: normal;
+#addlist {
+  display: inline-block;
+}
+
+#addtext {
+  box-sizing: content-box;
+  background-color: solid gray;
+  display: inline-block;
+  font-family: 'PT Sans', sans-serif;
+  height: 10vh;
+  top: 8vh;
+  position: absolute;
+  width: 10vh;
 }
 
 div.save {
@@ -134,6 +159,8 @@ div.save {
   background-color: solid gray;
   display: inline-block;
   height: 10vh;
+  top: 30vh;
+  position: absolute;
   width: 10vh;
 }
 
@@ -151,4 +178,8 @@ a.cancel {
   background-color: #e2e4e6;
   color: #4d4d4d;
   padding: 1em;
+}
+
+form.list {
+  display: none;
 }
