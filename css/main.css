@@ -1,13 +1,13 @@
 /* Body */
 body{
-  background-color: #0079bf;
+  background-color: #00aecc;
   margin: 0;
   width: 100%;
 }
 /* HEADER */
 header {
- background-color: #026aa7;
- border: #003c5e;
+ background-color: #0094ae;
+ border: #0094ae;
  box-sizing: border-box;
  height: 8vh;
  left: 0;
@@ -18,30 +18,31 @@ header {
 }
 
 .leftbutton button {
- background-color: #4d95be;
+ background-color: #66bfce;
  border-style: none;
- border-radius: 8px;
+ border-radius: 3px;
  color: white;
  font-family: 'PT Sans', sans-serif;
  font-weight: bold;
  height: 2.6em;
- left: 1%;
+ left: 2%;
+ padding-left: 3px;
  position: absolute;
- text-align: center;
+ text-align: right;
  top: 15%;
- width: 9em;
+ width: 8em;
 }
 
 .barra input {
- background-color: #4d95be;
+ background-color: #66bfce;
  border-style: none;
- border-radius: 8px;
+ border-radius: 3px;
  font-family: 'PT Sans', sans-serif;
  height: 2.5em;
- left: 10%;
+ left: 11%;
  position: absolute;
  top: 15%;
- width: 30em;
+ width: 18em;
 }
 
  .trello img {
@@ -53,7 +54,7 @@ header {
 }
 
 div button {
- background-color: #4d95be;
+ background-color: #66bfce;
  border-style: none;
  border-radius: 8px;
  color: white;
@@ -83,7 +84,7 @@ div button {
 
 /* MAIN*/
 article {
-  background-color: #0079bf;
+  background-color: #00aecc;
   box-sizing: border-box;
   color: white;
   font-family: 'PT Sans', sans-serif;
@@ -126,16 +127,17 @@ section div.container  {
 
 section div.container input {
   border-style: none;
-  border-radius: 8px;
-  background-color: #005485;
+  border-radius: 3px;
+  background-color: #0094ae;
   font-family: 'PT Sans', sans-serif;
   font-weight: bold;
-  height: 3em;
-  left: 5vh;
+  height: 5vh;
+  left: 0vh;
   padding-left: 10px;
   position: absolute;
   text-align: left;
-  width: 20em;
+  top: 0vh;
+  width: 19.5em;
 }
 
 #addtext {
@@ -159,35 +161,56 @@ div.save {
   width: 10vh;
 }
 
-.savebutton {
+/*---JAVASCRIPT---*/
+
+.square {
+  background-color: #e2e4e6;
+  border-radius: 3px;
+  height: 5em;
+  left: 4vh;
+  padding: 2px;
+  position: absolute;
+  top: 16vh;
+  width: 17.4em;
+}
+
+.botonCancel {
+  background-color: #e2e4e6;
+  color: #AAAAAA;
+  font-size: 2.5em;
+  font-weight: lighter;
+  height: 1em;
+  left: 17vh;
+  position: absolute;
+  top: 6.5vh;
+  width: 1em;
+}
+
+.guardar {
   background-color: #519839;
+  border-radius: 3px;
   color: white;
   font-family: 'PT Sans', sans-serif;
   font-weight: bold;
   font-size: 1em;
-  height: 3.5em;
-  width: 7.5em;
+  height: 2em;
+  left: .8vh;
+  top: 6.9vh;
+  width: 6em;
 }
 
-a.cancel {
-  background-color: #e2e4e6;
-  color: #4d4d4d;
-  padding: 1em;
-}
-
-/*---JAVASCRIPT---*/
-
-.square {
-  border-radius: 10px;
-  background-color: #e2e4e6;
-  height: 20em;
-  left: 5vh;
+.newinput {
+  border-color: 1px #7f7f7f;
+  border-style: none;
+  border-radius: 3px;
+  background-color:#aaa;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  height: 5vh;
+  left: 1vh;
   padding-left: 10px;
   position: absolute;
-  top: 17vh;
-  width: 20em;
-}
-
-.botonCancel {
-  background-color: red;
+  text-align: left;
+  top: 1vh;
+  width: 19.5em;
 }
