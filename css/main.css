@@ -4,6 +4,7 @@ body{
   margin: 0;
   width: 100%;
 }
+
 /* HEADER */
 header {
  background-color: #0094ae;
@@ -17,6 +18,7 @@ header {
  width: 100%;
 }
 
+/*SECCION BOTONES ICONOS IZQUIERDA*/
 .leftbutton button {
  background-color: #66bfce;
  border-style: none;
@@ -64,7 +66,7 @@ header {
  top: 1em;
 }
 
-
+/*ICONO TRELLO*/
  .trello img {
   height: 2em;
   left: 45%;
@@ -73,6 +75,7 @@ header {
   width: 6.5em;
 }
 
+/*SECCION BOTONES ICONOS DERECHA*/
 div button {
  background-color: #66bfce;
  border-style: none;
@@ -136,6 +139,7 @@ span i .fa-star .fa-briefcase {
   padding: 2px;
   position: relative;
 }
+
 /* FORM LISTA*/
 section div.container  {
   height: 75vh;
@@ -160,6 +164,16 @@ section div.container input {
   width: 19.5em;
 }
 
+div.save {
+  box-sizing: content-box;
+  background-color: solid gray;
+  display: inline-block;
+  height: 10vh;
+  top: 30vh;
+  position: absolute;
+  width: 10vh;
+}
+
 #addtext {
   box-sizing: content-box;
   background-color: solid gray;
@@ -171,18 +185,9 @@ section div.container input {
   width: 10vh;
 }
 
-div.save {
-  box-sizing: content-box;
-  background-color: solid gray;
-  display: inline-block;
-  height: 10vh;
-  top: 30vh;
-  position: absolute;
-  width: 10vh;
-}
+/*---------------------JAVASCRIPT-----------------------------*/
 
-/*---JAVASCRIPT---*/
-
+/*CONTAINER*/
 .square {
   background-color: #e2e4e6;
   border-radius: 3px;
@@ -235,6 +240,7 @@ div.save {
   width: 19.5em;
 }
 
+/*SEGUNDA VERSION*/
 .newElement {
   color: #59595A;
   font-family: 'PT Sans', sans-serif;
@@ -260,3 +266,5 @@ div.save {
   top: 3.5em;
   width: 16em;
 }
+
+/*TERCERA VERSION*/
