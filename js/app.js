@@ -1,26 +1,43 @@
 var container = document.getElementsByClassName("container")[0];
 var addlist = document.getElementById("addlist");
 var list = document.getElementById("list");
-var newName = document.getElementById("newName");
-
+var boton = document.createElement('button');
+var botonX = document.createElement('button');
+/*PRIMERA VERSION*/
 addlist.addEventListener("click", function(){
   container.className = "square";
-
   list.className = "newInput";
 
-  var boton = document.createElement('button');
   boton.type = "button";
   boton.className = "guardar";
-  container.appendChild(boton);
   boton.appendChild(document.createTextNode("Guardar"));
+  container.appendChild(boton);
 
-  var botonX = document.createElement('button');
   botonX.type = "button";
   botonX.className = "botonCancel";
-  container.appendChild(botonX);
   botonX.innerHTML = "&times;";
-})
+  container.appendChild(botonX);
 
-boton.addEventListener("click", function(){
-  container.appendChild(document.createTextNode("Añadir una tarea"));
-})
+/*SEGUNDA VERSION*/
+boton.addEventListener("click", second);
+});
+
+function second(){
+  var newName = document.getElementById("list").value;
+  newName.value = " ";
+  var newText = document.createTextNode(newName);
+  var newElement = document.createElement("h2");
+  newElement.className = 'newElement';
+  newElement.appendChild(newText);
+  addlist.appendChild(newElement);
+  container.appendChild(addlist);
+  boton.style.display = 'none';
+  botonX.style.display = 'none';
+  list.style.display = 'none';
+  var newList = document.createTextNode('Añadir una tarea');
+  var newLink = document.createElement("a");
+  newLink.className = 'link';
+  newLink.appendChild(newList);
+  container.appendChild(newLink);
+  boton.removeEventListener('click', second);
+ }

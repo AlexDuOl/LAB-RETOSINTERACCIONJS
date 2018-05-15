@@ -33,6 +33,16 @@ header {
  width: 8em;
 }
 
+.leftbutton img.mark {
+ background-color: #66bfce;
+ font-weight: bold;
+ height: 1.9em;
+ left: 2.1em;
+ position: absolute;
+ top: .6em;
+ width: 1.9em;
+}
+
 .barra input {
  background-color: #66bfce;
  border-style: none;
@@ -44,6 +54,16 @@ header {
  top: 15%;
  width: 18em;
 }
+
+.fa-search {
+ background-color: none;
+ color: white;
+ font-weight: bold;
+ left: 23em;
+ position: absolute;
+ top: 1em;
+}
+
 
  .trello img {
   height: 2em;
@@ -213,4 +233,30 @@ div.save {
   text-align: left;
   top: 1vh;
   width: 19.5em;
+}
+
+.newElement {
+  color: #59595A;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  height: 5vh;
+  left: 1vh;
+  padding-left: 10px;
+  position: absolute;
+  text-align: left;
+  width: 16em;
+}
+
+.link {
+  color: #59595A;
+  font-family: 'PT Sans', sans-serif;
+  height: 5vh;
+  left: 1vh;
+  padding-left: 10px;
+  position: absolute;
+  text-align: left;
+  text-decoration: underline;
+  top: 3.5em;
+  width: 16em;
 }
