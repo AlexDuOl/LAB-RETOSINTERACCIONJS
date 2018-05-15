@@ -1,11 +1,12 @@
 var container = document.getElementsByClassName("container")[0];
 var addlist = document.getElementById("addlist");
 var list = document.getElementById("list");
+var newName = document.getElementById("newName");
 
 addlist.addEventListener("click", function(){
   container.className = "square";
 
-  list.className = "newinput";
+  list.className = "newInput";
 
   var boton = document.createElement('button');
   boton.type = "button";
@@ -18,4 +19,8 @@ addlist.addEventListener("click", function(){
   botonX.className = "botonCancel";
   container.appendChild(botonX);
   botonX.innerHTML = "&times;";
+})
+
+boton.addEventListener("click", function(){
+  container.appendChild(document.createTextNode("Añadir una tarea"));
 })
