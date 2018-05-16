@@ -1,80 +1,70 @@
-/*NOMBRANDO VARIABLES, OBTENIENDO ELEMENTOS Y CREANDOLOS*/
-var addlist = document.getElementById("addlist");
-var boton = document.createElement('button');
-var botonX = document.createElement('button');
-var container = document.getElementsByClassName("container")[0];
-var list = document.getElementById("list");
+var section = document.getElementById('section')
+var firtsId = document.getElementById('firtsId');
+var secondId = document.getElementById('secondId');
+var addList = document.getElementById('addList');
+var botton = document.createElement('botton');
+var bottonX = document.createElement('bottonX');
 
 /*-----------------PRIMERA VERSION AÑADIR UNA LISTA--------------------*/
-addlist.addEventListener("click", function(){
+addList.addEventListener('click', firts);
 
-/*CREACION DE CLASES PARA TRABAJAR EN CSS*/
-  boton.className = "guardar";
-  botonX.className = "botonCancel";
-  container.className = "square";
-  list.className = "newInput";
+function firts(){
+  var conteinerFirst = document.createElement("div");
+  conteinerFirst.className = 'conteiner';
+  botton.className = 'guardar';
+  bottonX.className = 'botonCancel';
+  addList.className = 'newInput';
+  botton.type = 'button';
+  botton.appendChild(document.createTextNode('Guardar'));
+  bottonX.type = 'buttonX';
+  bottonX.innerHTML = '&times;';
+  firtsId.appendChild(conteinerFirst);
+  conteinerFirst.appendChild(addList);
+  conteinerFirst.appendChild(botton);
+  conteinerFirst.appendChild(bottonX);
 
-/*ASIGNANDO HIJO A PADRE BOTON GUARDAR Y CANCELAR*/
-  boton.type = "button";
-  boton.appendChild(document.createTextNode("Guardar"));
-  container.appendChild(boton);
+addList.removeEventListener('click', firts);
+};
 
-  botonX.type = "button";
-  botonX.innerHTML = "&times;";
-  container.appendChild(botonX);
-});
+/*-----------------SEGUNDA VERSION AÑADIR UNA LISTA--------------------*/
+botton.addEventListener("click", second);
 
-/*-------------------------SEGUNDA VERSION CLICK EN BOTON---------------------------------*/
-boton.addEventListener("click", saveInput);
-
-function saveInput(){
-/*NOMBRANDO VARIABLES, OBTENIENDO ELEMENTOS Y CREANDOLOS*/
-  var newName = document.getElementById("list").value;
+function second(){
+  var newName = document.getElementById("addList").value;
   var newText = document.createTextNode(newName);
   var newElement = document.createElement("h2");
   var newList = document.createTextNode('Añadir una tarea');
-  var newLink = document.createElement("input");
-
-/*CREACION DE CLASES PARA TRABAJAR EN CSS*/
+  var newLink = document.createElement("a");
+  var conteinerTarea = document.createElement("div");
+  conteinerTarea.className = 'conteiner  conteinerauto';
   newElement.className = 'newElement';
   newLink.className = 'link';
 
-/*ASIGNANDO HIJO A PADRE DEL INPUT*/
+  addList.value = "";
+
+  secondId.appendChild(conteinerTarea);
   newElement.appendChild(newText);
-  addlist.appendChild(newElement);
-  container.appendChild(addlist);
+  conteinerTarea.appendChild(newElement);
 
   newLink.appendChild(newList);
-  container.appendChild(newLink);
+  conteinerTarea.appendChild(newLink);
 
-/*OCULTANDO BOTONES Y PRIMER IMPUT*/
-  boton.style.display = 'none';
-  botonX.style.display = 'none';
-  list.style.display = 'none';
+  /*-----------------TERCERA VERSION AÑADIR UNA LISTA--------------------*/
+newLink.addEventListener("click", function (){
 
-  /*DETENIENDO EL EVENTO*/
-    boton.removeEventListener('click', saveInput);
+  var bottontwo = document.createElement('bottontwo');
+  var textarea = document.createElement('textarea');
+  bottontwo.className = 'bottontwo';
+  textarea.className = 'textarea';
+
+  bottontwo.appendChild(document.createTextNode('Añadir'));
+  newLink.appendChild(bottontwo);
+
+  conteinerTarea.appendChild(textarea);
+  conteinerTarea.appendChild(bottontwo);
+  secondId.appendChild(conteinerTarea);
+
+  newLink.style.display = 'none';
+
+  });
 };
-
-/*-----------------------------TERCERA VERSION------------------------------------------*/
-  newLink.addEventListener("click", addWork);
-
-  function addWork(){
-/*NOMBRANDO VARIABLES, OBTENIENDO ELEMENTOS Y CREANDOLOS*/
-  var board = document.createElement('textarea');
-  var texBoard = document.createTextNode('textWork');
-
-  /*ASIGNANDO HIJO A PADRE DEL INPUT*/
-    board.appendChild(textBoard);
-    addWork.appendChild(board);
-    container.appendChild(board);
-
-
-
-/*CREACION DE CLASES PARA TRABAJAR EN CSS*/
-  addWork.className = 'addWork';
-
-/*DETENIENDO EL EVENTO
-  boton.removeEventListener('click', addWork);*/
-
-}
