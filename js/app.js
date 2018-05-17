@@ -67,11 +67,11 @@ newLink.addEventListener('click', function (){
   secondId.appendChild(conteinerTarea);
 
   newLink.style.display = 'none';
-
+/*-----------------CUARTA VERSION FOCUS--------------------*/
   textArea.onfocus = ('click', function(){
-    textArea.style.backgroundColor = '#ABC5D3';
+     textArea.style.backgroundColor = '#ABC5D3';
   });
-
+/*-----------------QUINTA VERSION AÑADIR NUEVAS LISTAS--------------------*/
 bottonTwo.addEventListener('click', function (){
 
   var addTextArea = textArea.value;
@@ -90,5 +90,3 @@ bottonTwo.addEventListener('click', function (){
   });
 
 };
-
-/*-----------------CUARTA VERSION FOCUS--------------------*/
