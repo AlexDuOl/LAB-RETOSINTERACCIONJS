@@ -85,6 +85,14 @@ bottonTwo.addEventListener('click', function (){
 
   conteinerTarea.insertBefore(newTextArea, textArea);
 
+/*-----------------SEXTA VERSION AÑADIR NUEVAS LISTAS Y CERRANDO LISTAS ANTERIORES--------------------*/
+  addList.addEventListener('click', function (){
+
+      textArea.style.display = 'none';
+      bottonTwo.style.display = 'none';
+
+      });
+
     });
 
   });
