@@ -65,6 +65,25 @@ newLink.addEventListener("click", function (){
   secondId.appendChild(conteinerTarea);
 
   newLink.style.display = 'none';
+});
 
-  });
+  bottontwo.addEventListener("click", function (){
+
+    var bottontwo = document.createElement('bottontwo');
+    var textarea = document.createElement('textarea');
+    bottontwo.className = 'bottontwo';
+    textarea.onselect.
+
+    bottontwo.appendChild(document.createTextNode('Añadir'));
+    newLink.appendChild(bottontwo);
+
+    conteinerTarea.appendChild(textarea);
+    conteinerTarea.appendChild(bottontwo);
+    secondId.appendChild(conteinerTarea);
+
+    newLink.style.display = 'none';
+
+    });
 };
+
+/*-----------------CUARTA VERSION FOCUS--------------------*/
