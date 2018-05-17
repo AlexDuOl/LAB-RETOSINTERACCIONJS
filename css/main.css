@@ -155,6 +155,8 @@ span i .fa-star .fa-briefcase {
 
 #firtsId, #secondId{
   display: inline-block;
+  float:left;
+  height: auto;
   width: fit-content;
 }
 
@@ -229,7 +231,7 @@ span i .fa-star .fa-briefcase {
   width: 19.5em;
 }
 
-.bottontwo {
+.bottonTwo {
   background-color: #519839;
   border-radius: 3px;
   display: inline-block;
@@ -241,7 +243,7 @@ span i .fa-star .fa-briefcase {
   padding: 7px;
 }
 
-.textarea {
+.textArea {
   border-radius: 4px;
   font-family: 'PT Sans', sans-serif;
   font-weight: normal;

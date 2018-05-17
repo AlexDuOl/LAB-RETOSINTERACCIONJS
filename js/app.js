@@ -9,7 +9,7 @@ var bottonX = document.createElement('bottonX');
 addList.addEventListener('click', firts);
 
 function firts(){
-  var conteinerFirst = document.createElement("div");
+  var conteinerFirst = document.createElement('div');
   conteinerFirst.className = 'conteiner';
   botton.className = 'guardar';
   bottonX.className = 'botonCancel';
@@ -27,20 +27,20 @@ addList.removeEventListener('click', firts);
 };
 
 /*-----------------SEGUNDA VERSION AÑADIR UNA LISTA--------------------*/
-botton.addEventListener("click", second);
+botton.addEventListener('click', second);
 
 function second(){
-  var newName = document.getElementById("addList").value;
+  var newName = document.getElementById('addList').value;
   var newText = document.createTextNode(newName);
-  var newElement = document.createElement("h2");
+  var newElement = document.createElement('h2');
   var newList = document.createTextNode('Añadir una tarea');
-  var newLink = document.createElement("a");
-  var conteinerTarea = document.createElement("div");
+  var newLink = document.createElement('a');
+  var conteinerTarea = document.createElement('div');
   conteinerTarea.className = 'conteiner  conteinerauto';
   newElement.className = 'newElement';
   newLink.className = 'link';
 
-  addList.value = "";
+  addList.value = '';
 
   secondId.appendChild(conteinerTarea);
   newElement.appendChild(newText);
@@ -50,40 +50,45 @@ function second(){
   conteinerTarea.appendChild(newLink);
 
   /*-----------------TERCERA VERSION AÑADIR UNA LISTA--------------------*/
-newLink.addEventListener("click", function (){
+newLink.addEventListener('click', function (){
 
-  var bottontwo = document.createElement('bottontwo');
-  var textarea = document.createElement('textarea');
-  bottontwo.className = 'bottontwo';
-  textarea.className = 'textarea';
+  var bottonTwo = document.createElement('bottonTwo');
+  var textArea = document.createElement('textArea');
+  bottonTwo.className = 'bottonTwo';
+  textArea.className = 'textArea';
 
-  bottontwo.appendChild(document.createTextNode('Añadir'));
-  newLink.appendChild(bottontwo);
+  document.getElementById('addList').value;
 
-  conteinerTarea.appendChild(textarea);
-  conteinerTarea.appendChild(bottontwo);
+  bottonTwo.appendChild(document.createTextNode('Añadir'));
+  newLink.appendChild(bottonTwo);
+
+  conteinerTarea.appendChild(textArea);
+  conteinerTarea.appendChild(bottonTwo);
   secondId.appendChild(conteinerTarea);
 
   newLink.style.display = 'none';
-});
 
-  bottontwo.addEventListener("click", function (){
+  textArea.onfocus = ('click', function(){
+    textArea.style.backgroundColor = '#ABC5D3';
+  });
 
-    var bottontwo = document.createElement('bottontwo');
-    var textarea = document.createElement('textarea');
-    bottontwo.className = 'bottontwo';
-    textarea.onselect.
+bottonTwo.addEventListener('click', function (){
 
-    bottontwo.appendChild(document.createTextNode('Añadir'));
-    newLink.appendChild(bottontwo);
+  var addTextArea = textArea.value;
+  var newTextArea = document.createElement('h4');
 
-    conteinerTarea.appendChild(textarea);
-    conteinerTarea.appendChild(bottontwo);
-    secondId.appendChild(conteinerTarea);
+  textArea.value = '';
 
-    newLink.style.display = 'none';
+  newTextArea.innerText = addTextArea;
+  conteinerTarea.appendChild(newTextArea);
+  secondId.appendChild(conteinerTarea);
+
+  conteinerTarea.insertBefore(newTextArea, textArea);
 
     });
+
+  });
+
 };
 
 /*-----------------CUARTA VERSION FOCUS--------------------*/
